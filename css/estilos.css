@@ -6,7 +6,7 @@
 
 body {
 	background: #EFEFEF;
-	color: #363639;
+	color: #080808;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -75,7 +75,6 @@ main {
 }
 
 .simply-section {
-	background: #fff;
 	width: 180px;
 	height: 180px;
 	margin: 0 20px;
@@ -96,24 +95,48 @@ main {
 	font-size: 30px;
 }
 
-
-/* ? ---------------------------- */
-
-
-
-/* ? ----- REDES SOCIALES ----- */
-.redes-sociales .btn-red-social {
-	padding: 15px 0;
-	display: inline-block;
-	min-width: 120px;
-	border-radius: 5px;
-	background: #FF0000;
-	color: #fff;
-	font-size: 30px;
-	margin: 0 20px;
-	transition: .3s ease all;
+.count-content{
+	position: absolute;
 }
+.skewed,
+.skewed-second,
+.skewed-third {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #8BB9E3;
+	z-index: 0;
+	transform: skewY(-13deg);
+	transform-origin: top left;
+  }
+.skewed-second {
+	position: absolute;
+	top: 60%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ffffff;
+	z-index: 0;
+	transform: skewY(-13deg);
+	transform-origin: top left;
+  }
+.skewed-third {
+	position: absolute;
+	top: 100%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #8BB9E3;
+	z-index: 0;
+	transform: skewY(-13deg);
+	transform-origin: top left;
+  }
 
-.redes-sociales .btn-red-social:hover {
-	box-shadow: 0px 0px 50px 10px rgba(0,0,0,.15);
-}
