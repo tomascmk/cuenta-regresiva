@@ -8,27 +8,22 @@ body {
 	background: #EFEFEF;
 	color: #080808;
     font-family: 'Work Sans', sans-serif;
+	text-align: center;
 }
 
-
+section{
+	position: absolute	;
+	max-height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
 
 /* ? ----- PORTADA ----- */
 .portada {
-	width: 100%;
-	background: #EFEFEF;
-
-	min-height: 100vh;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	height: 100vh;
+	width: 100vw;
 	text-align: center;
-	transition: .5s ease-out all;
 }
 
 .portada.oculta {
@@ -39,9 +34,6 @@ body {
 	margin-bottom: 100px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-}
-
-.portada .header .logotipo {
 	font-size: 50px;
 	font-size: 900;
 	margin-bottom: 20px;
@@ -52,26 +44,12 @@ body {
 	font-weight: 600;
 }
 
-
-
-/* ? ----- MAIN ----- */
-main {
-	max-width: 1000px;
-	margin: auto;
-	width: 90%;
-	padding: 60px 0;
-	font-size: 18px;
-	line-height: 28px;
-	text-align: left;
-}
-
-
-
 /* ? ----- Cuenta Regresiva ----- */
 #cuenta {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 100px;
+	flex-direction: row;
 }
 
 .simply-section {
@@ -82,6 +60,8 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #ffffff;
+	margin: 15px;
 }
 
 .simply-amount {
@@ -96,47 +76,60 @@ main {
 }
 
 .count-content{
+	width: 100vw;
+	height: 100%;
+	overflow: scroll;
 	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0%;
 }
+
+.logotipo{
+	font-size: 3vw;
+}
+
 .skewed,
 .skewed-second,
 .skewed-third {
-	position: absolute;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 40vh;
 	background: #8BB9E3;
 	z-index: 0;
-	transform: skewY(-13deg);
-	transform-origin: top left;
-  }
-.skewed-second {
-	position: absolute;
-	top: 60%;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #ffffff;
-	z-index: 0;
-	transform: skewY(-13deg);
-	transform-origin: top left;
-  }
-.skewed-third {
-	position: absolute;
-	top: 100%;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #8BB9E3;
-	z-index: 0;
-	transform: skewY(-13deg);
-	transform-origin: top left;
   }
 
+.skewed-second {
+	background: #ffffff;
+  }
+
+.skewed-third {
+	background: #8BB9E3;
+  }
+
+@media (max-width: 800px) {
+	.logotipo{
+		font-size: 5vw;
+		margin-top: 400px;
+	}
+    #cuenta{
+		flex-direction: column !important;
+		align-items: center;
+	}
+	.simply-amount{
+		font-size: 30px;
+	}
+	.simply-word {
+		font-size: 20px;
+	}
+	.count-content{
+		height: auto;
+		max-height: 100vh;
+		overflow: scroll;
+	}
+ }
