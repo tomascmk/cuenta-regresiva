@@ -11,7 +11,7 @@ body {
 	text-align: center;
 }
 
-section{
+.skewed-section{
 	position: absolute	;
 	max-height: 100vh;
 	width: 100vw;
@@ -87,6 +87,7 @@ section{
 	margin-top: 0%;
 }
 
+.logotipo-fr,
 .logotipo{
 	font-size: 3vw;
 }
@@ -110,6 +111,38 @@ section{
 
 .skewed-third {
 	background: #8BB9E3;
+  }
+
+.skewed-section-fr{
+	position: absolute;
+	max-height: 100vh;
+	width: 100vw;
+	display: flex;
+}
+.skewed-container-fr{
+	display: flex;
+	justify-content: center;
+}
+
+.skewed-fr,
+.skewed-second-fr,
+.skewed-third-fr {
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: calc(100vw / 3);
+	height: 100vh;
+	background: #192B6D;
+	z-index: 0;
+  }
+
+.skewed-second-fr {
+	background: #ffffff;
+  }
+
+.skewed-third-fr {
+	background: #F00F15;
   }
 
 @media (max-width: 800px) {
