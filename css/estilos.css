@@ -153,6 +153,8 @@ body {
     #cuenta{
 		flex-direction: column !important;
 		align-items: center;
+		margin-bottom: 0px;
+		margin-top: 30vh;
 	}
 	.simply-amount{
 		font-size: 30px;
